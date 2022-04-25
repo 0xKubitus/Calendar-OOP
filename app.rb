@@ -22,3 +22,7 @@ event_two = Event.new("2023-01-13 10:05", 15, "pause", ["truc@machin.com" , "cho
 event_three = Event.new("2023-01-13 13:00", 120, "projet A", ["bidule@chose.fr", "mange@tesmorts.fr"])
 
 p Event.all
+puts " "
+p event_one.postpone_24h
+puts " "
+p event_one

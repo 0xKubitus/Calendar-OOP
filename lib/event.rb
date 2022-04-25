@@ -16,10 +16,18 @@ class Event
   end
 
 
+
   def self.all
     return @@all_events
   end
 
+
+
+  def postpone_24h
+    # 24h = 24 x 60min x 60sec
+    @start_date = start_date + (24*60*60) # on utilise des secondes pour modifier un objet au format "Time"
+  end
   
+
 end
 
