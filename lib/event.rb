@@ -55,6 +55,14 @@ class Event
   end
 
 
+  def to_s
+    puts ">Titre : #{@title}"
+    puts ">Date de début : #{@start_date}"
+    puts ">Durée : #{@duration} minutes"
+    print ">Invités :"
+    puts @attendees.join(", ")
+  end
+
 
 end
 

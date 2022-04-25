@@ -45,6 +45,8 @@ p event_two.is_soon?
 
 #on créée un 4eme event, qui commence précisément 20min aprés lancement du programme: (Time.now+(20min*60sec))
 event_four = Event.new("#{Time.now+(20*60)}", 30, "reunion", ["truc@machin.com", "bidule@chose.fr"])
+p event_four.is_soon?
+puts " "
 p event_four
 puts " "
-p event_four.is_soon?
+p event_four.to_s
