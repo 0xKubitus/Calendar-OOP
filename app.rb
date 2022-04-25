@@ -17,12 +17,34 @@ require_relative 'lib/event'
 
 #p User.all
 
-event_one = Event.new("2023-01-13 09:00", 30, "reunion", ["truc@machin.com", "bidule@chose.fr"])
+event_one = Event.new("2021-01-13 09:00", 30, "reunion", ["truc@machin.com", "bidule@chose.fr"])
 event_two = Event.new("2023-01-13 10:05", 15, "pause", ["truc@machin.com" , "chose@tkt.ch"])
 event_three = Event.new("2023-01-13 13:00", 120, "projet A", ["bidule@chose.fr", "mange@tesmorts.fr"])
 
 p Event.all
 puts " "
+p event_one
+puts " "
 p event_one.postpone_24h
 puts " "
 p event_one
+puts " "
+p event_one.end_date
+puts " "
+p event_one.is_past?
+puts " "
+p event_one.is_future?
+puts " "
+p event_two.is_future?
+puts " "
+p event_two.is_past?
+puts " "
+p !event_two.is_past?
+puts " "
+p event_two.is_soon?
+
+#on créée un 4eme event, qui commence précisément 20min aprés lancement du programme: (Time.now+(20min*60sec))
+event_four = Event.new("#{Time.now+(20*60)}", 30, "reunion", ["truc@machin.com", "bidule@chose.fr"])
+p event_four
+puts " "
+p event_four.is_soon?
