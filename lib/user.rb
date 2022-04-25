@@ -20,13 +20,10 @@ class User
 end
 
 
-=begin 
+#POUR TESTER FAIRE CE QUI SUIT (mais en réalité il vaut mieux tester directement dans le fichier 'app.rb' pour verifier que tout est bien relié):
 
-POUR TESTER FAIRE CE QUI SUIT:
+# kubi = User.new(27, "kubi@mail")
+# rick = User.new(72, "kubi@mail")
+# morty = User.new(15, "kubi@mail")
 
- kubi = User.new(27, "kubi@mail")
- random = User.new(20, "random@rdm")
-
- p User.all
-
- =end
+# p User.all
