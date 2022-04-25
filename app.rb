@@ -17,8 +17,8 @@ require_relative 'lib/event'
 
 #p User.all
 
-event_one = Event.new(30, "2023-01-13 09:00")
-event_two = Event.new(15, "2023-01-13 10:05")
-event_three = Event.new(120, "2023-01-13 13:00")
+event_one = Event.new("2023-01-13 09:00", 30, "reunion", ["truc@machin.com", "bidule@chose.fr"])
+event_two = Event.new("2023-01-13 10:05", 15, "pause", ["truc@machin.com" , "chose@tkt.ch"])
+event_three = Event.new("2023-01-13 13:00", 120, "projet A", ["bidule@chose.fr", "mange@tesmorts.fr"])
 
 p Event.all
